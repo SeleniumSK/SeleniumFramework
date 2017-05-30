@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="26137" started-at="2017-05-23T20:28:06Z" finished-at="2017-05-23T20:28:32Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="26137" started-at="2017-05-23T20:28:06Z" finished-at="2017-05-23T20:28:32Z">
+      <class name="testCases.LoginTestCase">
+        <test-method status="PASS" signature="startApp(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginTestCase@3bfdc050]" name="startApp" is-config="true" duration-ms="17024" started-at="2017-05-23T13:28:06Z" finished-at="2017-05-23T13:28:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://opensource.demo.orangehrmlive.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method status="PASS" signature="login()[pri:0, instance:testCases.LoginTestCase@3bfdc050]" name="login" duration-ms="6455" started-at="2017-05-23T13:28:23Z" finished-at="2017-05-23T13:28:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:testCases.LoginTestCase@3bfdc050]" name="closeApp" is-config="true" duration-ms="2617" started-at="2017-05-23T13:28:29Z" finished-at="2017-05-23T13:28:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- testCases.LoginTestCase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

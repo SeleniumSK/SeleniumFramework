@@ -10,4 +10,20 @@
       <class name="testCases.LoginTestCase"/>
     </classes>
   </test> <!-- Test -->
+  <test name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="http://opensource.demo.orangehrmlive.com/"/>
+    <classes>
+      <class name="testCases.LoginTestCase">
+        <methods>
+          <include name="setupReport"/>
+          <include name="login"/>
+          <include name="closeApp"/>
+          <include name="startApp"/>
+          <include name="generateReport"/>
+          <include name="endTest"/>
+        </methods>
+      </class> <!-- testCases.LoginTestCase -->
+    </classes>
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

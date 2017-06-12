@@ -1,5 +1,5 @@
-package testCases;
-
+ package testCases;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -62,7 +62,7 @@ public class BaseClass {
 		
 	}
 	
-	@AfterClass
+	@AfterClass(enabled=false)
 	public void closeApp()
 	{
 		BrowserFactory.closeBrowser(driver);

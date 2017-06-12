@@ -3,7 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="unitTestcases.StartBrowser"/>
+      <class name="testCases.LoginTestCase"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="testCases.LoginTestCase">
+        <methods>
+          <include name="setupReport"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testCases.LoginTestCase -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

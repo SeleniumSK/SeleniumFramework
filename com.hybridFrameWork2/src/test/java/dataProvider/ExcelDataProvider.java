@@ -68,6 +68,7 @@ public class ExcelDataProvider {
 		try {
 			wb.write(fout);
 			wb.close();
+		
 		} catch (IOException e) {
 
 			System.out.println("unable to write the sheet");

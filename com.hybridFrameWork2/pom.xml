@@ -62,13 +62,13 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
-					<systemPropertyVariables>
+				<!-- <systemPropertyVariables>
 
 						<browser>${browser}</browser>
 						<url>${url}</url>
 
 					</systemPropertyVariables>
-				</configuration>
+ -->				</configuration>
 								
 			</plugin>
 		</plugins>

@@ -1,37 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="26137" started-at="2017-05-23T20:28:06Z" finished-at="2017-05-23T20:28:32Z">
+  <suite name="Default suite" duration-ms="60" started-at="2017-06-10T17:46:45Z" finished-at="2017-06-10T17:46:45Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="26137" started-at="2017-05-23T20:28:06Z" finished-at="2017-05-23T20:28:32Z">
+    <test name="Default test" duration-ms="60" started-at="2017-06-10T17:46:45Z" finished-at="2017-06-10T17:46:45Z">
       <class name="testCases.LoginTestCase">
-        <test-method status="PASS" signature="startApp(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginTestCase@3bfdc050]" name="startApp" is-config="true" duration-ms="17024" started-at="2017-05-23T13:28:06Z" finished-at="2017-05-23T13:28:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[http://opensource.demo.orangehrmlive.com/]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="setupReport()[pri:0, instance:testCases.LoginTestCase@368f2016]" name="setupReport" is-config="true" duration-ms="558" started-at="2017-06-10T10:46:45Z" finished-at="2017-06-10T10:46:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method status="FAIL" signature="startApp(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginTestCase@368f2016]" name="startApp" is-config="true" duration-ms="0" started-at="2017-06-10T10:46:45Z" finished-at="2017-06-10T10:46:45Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by @Configuration on method startApp but has not been marked @Optional or defined
+in C:\Users\LENOVO\AppData\Local\Temp\testng-eclipse-106452074\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by @Configuration on method startApp but has not been marked @Optional or defined
+in C:\Users\LENOVO\AppData\Local\Temp\testng-eclipse-106452074\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApp -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testCases.LoginTestCase@3bfdc050]" name="login" duration-ms="6455" started-at="2017-05-23T13:28:23Z" finished-at="2017-05-23T13:28:29Z">
+        <test-method status="SKIP" signature="login()[pri:0, instance:testCases.LoginTestCase@368f2016]" name="login" duration-ms="1" started-at="2017-06-10T10:46:45Z" finished-at="2017-06-10T10:46:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:testCases.LoginTestCase@3bfdc050]" name="closeApp" is-config="true" duration-ms="2617" started-at="2017-05-23T13:28:29Z" finished-at="2017-05-23T13:28:32Z">
+        <test-method status="SKIP" signature="endTest(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestCase@368f2016]" name="endTest" is-config="true" duration-ms="0" started-at="2017-06-10T10:46:45Z" finished-at="2017-06-10T10:46:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeApp -->
+        </test-method> <!-- endTest -->
+        <test-method status="SKIP" signature="generateReport()[pri:0, instance:testCases.LoginTestCase@368f2016]" name="generateReport" is-config="true" duration-ms="0" started-at="2017-06-10T10:46:45Z" finished-at="2017-06-10T10:46:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
       </class> <!-- testCases.LoginTestCase -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
